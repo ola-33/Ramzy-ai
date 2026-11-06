@@ -1,11 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RAMZY AI | Security Assistant",
-  description: "A private AI workspace for authorized website and network security learning.",
+  title: "RAMZY AI | Penetration Testing Assistant",
+  description: "A private AI workspace for authorized website and network penetration testing.",
   applicationName: "RAMZY AI",
-  manifest: "/manifest.webmanifest",
+  manifest: "/manifest.webmanifest"
+};
+
+export const viewport: Viewport = {
   themeColor: "#080b09"
 };
 
