@@ -18,7 +18,7 @@ The chat endpoint uses the OpenAI-compatible Chat Completions format.
 For Google AI Studio Gemini, set these Vercel environment variables:
 - `AI_API_KEY`: your Gemini API key.
 - `AI_BASE_URL`: `https://generativelanguage.googleapis.com/v1beta/openai/`
-- `AI_MODEL`: a Gemini model enabled for your account, for example `gemini-2.5-flash`.
+- `AI_MODEL`: a Gemini model enabled for your account, for example `gemini-3.8-flash`.
 
 For an OpenAI-compatible provider, set its documented base URL, model, and API key. Never commit keys to GitHub or expose them in client-side code.
 
