@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
     !!m && typeof m === "object" &&
     ((m as { role?: string }).role === "user" || (m as { role?: string }).role === "assistant") &&
     typeof (m as { content?: unknown }).content === "string" &&
-    (m as { content: string }).length <= 4000
+    (m as { content: string }).content.length <= 4000
   );
   if (!safeMessages.length) return NextResponse.json({ error: "Write a message first." }, { status: 400 });
 
