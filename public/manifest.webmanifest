@@ -1,0 +1,9 @@
+{
+  "name": "RAMZY AI",
+  "short_name": "RAMZY AI",
+  "description": "Private security learning and testing assistant",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080b09",
+  "theme_color": "#080b09"
+}
