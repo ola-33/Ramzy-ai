@@ -73,7 +73,7 @@ export default function Home() {
   if (!authenticated) return (
     <main className="auth-screen">
       <form className="auth-card" onSubmit={login}>
-        <div className="brand"><span className="brand-mark">R</span> RAMZY<span className="green"> AI</span></div>
+        <img className="login-logo" src="/ramzy-logo.png" alt="RAMZY AI crowned robot logo" />
         <div className="eyebrow">PRIVATE OWNER ACCESS</div>
         <h1>Welcome back.</h1>
         <p>Sign in to open your security workspace.</p>
@@ -97,7 +97,7 @@ export default function Home() {
   return (
     <main className="shell">
       <aside className="sidebar">
-        <div className="brand"><span className="brand-mark">R</span><span>RAMZY<span className="green"> AI</span></span></div>
+        <div className="brand"><img className="brand-logo" src="/ramzy-logo.png" alt="RAMZY AI" /><span>RAMZY<span className="green"> AI</span></span></div>
         <div className="side-label">WORKSPACE</div>
         {nav.map((item) => <button key={item.id} className={section === item.id ? "nav-item active" : "nav-item"} onClick={() => setSection(item.id)}><span>{item.icon}</span>{item.label}</button>)}
         <div className="sidebar-bottom"><span className="status-dot" /> PRIVATE WORKSPACE<br /><small>Owner session active</small></div>
@@ -105,7 +105,7 @@ export default function Home() {
 
       <section className="main-area">
         <header className="topbar">
-          <div className="mobile-brand">RAMZY<span className="green"> AI</span></div>
+          <div className="mobile-brand"><img className="mobile-logo" src="/ramzy-logo.png" alt="" />RAMZY<span className="green"> AI</span></div>
           <div className="secure-label"><span className="status-dot" /> OWNER SESSION</div>
           <button className="logout-button" onClick={logout}>SIGN OUT</button>
           <div className="avatar">R</div>
